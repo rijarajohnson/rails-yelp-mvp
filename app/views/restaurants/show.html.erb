@@ -5,7 +5,7 @@
 <h2>Review</h2>
 <ul>
     <% @restaurant.reviews.each do |review| %>
-  <li><%= restaurants_reviews %></li>
+  <li><%= review.content %></li>
 <% end %>
 </ul>
 <%= link_to "Add a review", new_restaurant_review_path(@restaurant) %>
